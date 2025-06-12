@@ -1,0 +1,21 @@
+body {
+    color: brown;
+    background-color: bisque;
+    font-family: 'Comic Sans MS', 'Caveat', cursive;
+  }
+  
+  .titulo {
+    color: blueviolet;
+    background-color: orange;
+    text-align: center;
+  }
+  
+  .texto {
+    color: darkblue;
+    text-align: justify;
+  }
+  
+  .centralizado {
+    text-align: center;
+  }
+  
