@@ -1,21 +1,42 @@
+/* Fundo com textura e logo como plano de fundo */
 body {
-    color: brown;
-    background-color: bisque;
-    font-family: 'Comic Sans MS', 'Caveat', cursive;
-  }
-  
-  .titulo {
-    color: blueviolet;
-    background-color: orange;
-    text-align: center;
-  }
-  
-  .texto {
-    color: darkblue;
-    text-align: justify;
-  }
-  
-  .centralizado {
-    text-align: center;
-  }
-  
+  background-image: url("../imagens/textura.png"), url("../imagens/logoSerra.png");
+  background-repeat: repeat, no-repeat;
+  background-position: left top, right top;
+  background-attachment: scroll, fixed;
+  background-size: auto, 150px; /* adiciona um tamanho visível ao logo */
+  color: brown;
+  font-family: 'Comic Sans MS', 'Caveat', cursive;
+}
+
+/* Estilo dos títulos */
+.titulo {
+  color: blueviolet;
+  background-color: orange;
+  text-align: center;
+}
+
+/* Estilo dos parágrafos */
+.texto {
+  color: darkblue;
+  text-align: justify;
+}
+
+/* Centralização de conteúdo */
+.centralizado {
+  text-align: center;
+}
+
+/* Logo fixa no canto superior direito da tela */
+.logo-fixa {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url("../imagens/logoSerra.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1000;
+}
