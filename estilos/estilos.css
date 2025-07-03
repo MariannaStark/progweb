@@ -1,42 +1,77 @@
-/* Fundo com textura e logo como plano de fundo */
 body {
-  background-image: url("../imagens/textura.png"), url("../imagens/logoSerra.png");
-  background-repeat: repeat, no-repeat;
-  background-position: left top, right top;
-  background-attachment: scroll, fixed;
-  background-size: auto, 150px; /* adiciona um tamanho visível ao logo */
-  color: brown;
-  font-family: 'Comic Sans MS', 'Caveat', cursive;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Estilo dos títulos */
-.titulo {
-  color: blueviolet;
-  background-color: orange;
+header {
+  background-color: #1c2c4c;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-/* Estilo dos parágrafos */
-.texto {
-  color: darkblue;
-  text-align: justify;
+.menu-principal ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Centralização de conteúdo */
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.botao {
+  display: block;
+  background-color: #1c2c4c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  background-color: #334a7d;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
 .centralizado {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Logo fixa no canto superior direito da tela */
-.logo-fixa {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background-image: url("../imagens/logoSerra.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 1000;
+footer {
+  background-color: #1c2c4c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
+
