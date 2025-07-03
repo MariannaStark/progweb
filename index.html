@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <div class="logo-fixa"></div>
-
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Sobre mim">
@@ -11,36 +9,72 @@
   <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-  <h1 class="titulo">Marianna Stark</h1>
+  <header>
+    <h1 class="titulo">Marianna Stark</h1>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#interesses">Interesses</a></li>
+        <li><a href="#logo-campus">Logo do Campus</a></li>
+        <li><a href="#foto-campus">Foto do Campus</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="centralizado">
-    <img src="imagens/avatar.png" alt="EU" height="200" width="150">
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside>
+      <nav class="menu-lateral">
+        <ul>
+          <li><a class="botao" href="tutorial/EXERCICIOMINITUTORIAL.html">Ir para tutorial</a></li>
+          <li><a class="botao" href="curriculos/curriculo.html">Ir para currículo</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <section id="sobre">
+        <div class="centralizado">
+          <img src="imagens/avatar.png" alt="EU" height="200" width="150">
+        </div>
+        <p class="texto">
+          Sou Marianna Stark, tenho 18 anos e sou estudante do curso Técnico Integrado em IOT no Instituto Federal do Espírito Santo (IFES).
+          Minha formação é voltada para sistemas robotizados e comandos numéricos computadorizados, com foco em programação CNC, controle de movimento e processos de manufatura avançada.
+          Meu interesse pela automação residencial vai além da teoria. Gosto de transformar conceitos técnicos em soluções práticas,
+          explorando a integração entre sistemas mecânicos e digitais para aumentar a eficiência e precisão dos processos produtivos.
+        </p>
+      </section>
+
+      <section id="interesses">
+        <h2 class="titulo">Meus interesses</h2>
+        <p class="texto">
+          Meus interesses se revezam entre sair com meus amigos, música, atividades manuais e passar tempo com minha família.
+        </p>
+      </section>
+
+      <section id="logo-campus">
+        <h2 class="titulo">Logo do meu campus</h2>
+        <div class="centralizado">
+          <img src="imagens/logoSerra.png" alt="Logo do Campus" title="meu campus">
+        </div>
+      </section>
+
+      <section id="foto-campus">
+        <h2 class="titulo">Foto do campus atualmente</h2>
+        <div class="centralizado">
+          <a href="https://www.serra.ifes.edu.br/" target="_blank">
+            <img src="imagens/serra.png" alt="Foto do Campus" title="Foto campus">
+          </a>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <p class="texto">
-    Sou Marianna Stark, tenho 18 anos e sou estudante do curso Técnico Integrado em IOT no Instituto Federal do Espírito Santo (IFES). Minha formação é voltada para sistemas robotizados e comandos numéricos computadorizados, com foco em programação CNC, controle de movimento e processos de manufatura avançada.
-    Meu interesse pela automação residencial vai além da teoria. Gosto de transformar conceitos técnicos em soluções práticas, explorando a integração entre sistemas mecânicos e digitais para aumentar a eficiência e precisão dos processos produtivos.
-  </p>
-
-  <h1 class="titulo">Meus interesses</h1>
-  <p class="texto">
-    Meus interesses se revezam entre sair com meus amigos, música, atividades manuais e passar tempo com minha família.
-  </p>
-
-  <h1 class="titulo">Logo do meu campus</h1>
-  <div class="centralizado">
-    <img src="imagens/logoSerra.png" alt="Logo do Campus" title="meu campus">
-  </div>
-
-  <h1 class="titulo">Foto do campus atualmente</h1>
-  <div class="centralizado">
-    <a href="https://www.serra.ifes.edu.br/" target="_blank">
-      <img src="imagens/serra.png" alt="Foto do Campus" title="Foto campus">
-    </a>
-  </div>
-
-  <a href="tutorial/EXERCICIOMINITUTORIAL.html">Ir para tutorial</a>
-  <a href="curriculos/curriculo.html">Ir para currículo</a>
+  <footer>
+    <p>Desenvolvido por Marianna Stark – IFES Campus Serra © 2025</p>
+  </footer>
 </body>
 </html>
+
 
